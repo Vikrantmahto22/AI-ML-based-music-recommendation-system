@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased font-sans;
+  }
+}
+
+@layer components {
+  .gradient-joy {
+    @apply bg-gradient-to-r from-joy-400 via-joy-300 to-accent-300 animate-gradient-x;
+  }
+  
+  .gradient-sadness {
+    @apply bg-gradient-to-r from-sadness-400 via-sadness-300 to-primary-300 animate-gradient-x;
+  }
+  
+  .gradient-anger {
+    @apply bg-gradient-to-r from-anger-400 via-anger-300 to-anger-500 animate-gradient-x;
+  }
+  
+  .gradient-neutral {
+    @apply bg-gradient-to-r from-gray-400 via-gray-300 to-gray-500 animate-gradient-x;
+  }
+  
+  .card {
+    @apply rounded-xl shadow-md bg-white p-4 transition-all duration-300;
+  }
+  
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-600 text-white focus:ring-secondary-500;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-500 hover:bg-accent-600 text-white focus:ring-accent-500;
+  }
+  
+  .btn-ghost {
+    @apply bg-transparent hover:bg-gray-100 text-gray-800 focus:ring-gray-500;
+  }
+  
+  .input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+}
